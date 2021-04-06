@@ -98,6 +98,7 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 >> fixed stripe auth error in GitPod env virables<br>
 >> tested stripe functionality and confirmed its working in the dashboard<br>
 >> ***submitting project for deadline (read header part of README)***
+>> comments on bag app
 
 
 

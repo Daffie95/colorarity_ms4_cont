@@ -21,6 +21,7 @@
             </div>
         </div>
 
+<!-- displays information about contents in shopping bag -->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -36,6 +37,7 @@
                                 </tr>
                             </thead>
 
+                            <!-- iteration to display each item in shopping bag with else statement if shopping bag is empty -->
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -85,6 +87,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
+                            <!-- calculates total of content in shopping bag -->
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -133,6 +136,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
+<!-- updating quantity or removing product -->
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
@@ -146,7 +150,7 @@
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        var data = {'csrfmiddlewaretoken': csrfToken,};
 
         $.post(url, data)
          .done(function() {

@@ -3,8 +3,10 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
-""" function to define and show
-    shopping bag items thats been added """
+"""
+function to define and show
+shopping bag items thats been added
+"""
 
 
 def bag_contents(request):
