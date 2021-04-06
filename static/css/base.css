@@ -25,6 +25,7 @@ html {
     height: 100%;
 }
 
+/* background image */
 body {
     background: url('/media/colorarity-header2.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -33,6 +34,7 @@ body {
     font-family: 'Lora', serif;
 }
 
+/* global icon styling */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -51,7 +53,7 @@ body {
 }
 
 
-/* matching button design across page */
+/* homepage button styling */
 .shop-now-button {
     background: black;
     color: white;
@@ -63,13 +65,14 @@ body {
     color: white;
 }
 
-/* ads effect when hovering */
+/* effect when hovering */
 .shop-button:hover, .shop-button:active, .shop-button:focus, .btn-black:hover, .btn-black:active, .btn-black:focus {
     text-decoration: none;
     background: #f8f9fa;
     color: #212529;
 }
 
+/* button styling */
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -107,6 +110,7 @@ body {
     background: #000 !important;
 }
 
+/* All pages except home covers background image with white overlay */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -117,6 +121,7 @@ body {
 	z-index: -1;
 }
 
+/* category buttons hover effect */
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -127,6 +132,7 @@ h1.display-4.logo-font {
     text-shadow: 2px 2px #000000;
 }
 
+/* toast containers */
 .message-container {
     position: fixed;
     top: 80px;
@@ -180,13 +186,6 @@ h1.display-4.logo-font {
     border-bottom-color: #17a2b8 !important;
 }
 
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
 
 .bag-notification-wrapper {
     height: 120px;

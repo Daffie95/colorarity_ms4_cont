@@ -100,6 +100,8 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 >> ***submitting project for deadline (read header part of README)***
 >> comments on bag app
 >> comments on checkout app
+>> comments on product app
+>> comments on base.css
 
 
 
