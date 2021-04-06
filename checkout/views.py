@@ -8,7 +8,9 @@ from products.models import Product
 from bag.contexts import bag_contents
 
 import stripe
-
+"""
+Handling checkout requests and returns successful or error
+"""
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -83,6 +85,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """

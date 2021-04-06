@@ -1,7 +1,7 @@
 from django import forms
 from .models import Order
 
-
+# crispy_form content
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order

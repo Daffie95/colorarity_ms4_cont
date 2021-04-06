@@ -36,6 +36,7 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
+                <!-- displays items being checked out -->
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
@@ -63,6 +64,7 @@
                         <p class="my-0">Shipping:</p>
                         <p class="my-0">Grand Total:</p>
                     </div>
+                    <!-- calculates grandtotal  -->
                     <div class="col-3">
                         <p class="my-0">${{ total | floatformat:2 }}</p>
                         <p class="my-0">${{ shipping | floatformat:2 }}</p>
@@ -79,6 +81,7 @@
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
+                    <!-- crispy_form input fields -->
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Shipping</legend>
                         {{ order_form.phone_number | as_crispy_field }}
@@ -135,6 +138,7 @@
     </div>
 {% endblock %}
 
+<!-- stripe API -->
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
