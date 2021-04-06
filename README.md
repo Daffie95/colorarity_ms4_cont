@@ -90,10 +90,11 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 >> fixed stripe auth error in GitPod env virables<br>
 >> tested stripe functionality and confirmed its working in the dashboard<br>
 >> ***submitting project for deadline (read header part of README)***
->> comments on bag app
->> comments on checkout app
->> comments on product app
->> comments on base.css
+>> comments on bag app<br>
+>> comments on checkout app<br>
+>> comments on product app<br>
+>> comments on base.css<br>
+>> created webhook for stripe<br>
 
 
 
