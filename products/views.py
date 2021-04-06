@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
+
 from .models import Product, Category
 from .forms import ProductForm
 
@@ -18,7 +19,6 @@ def all_products(request):
     direction = None
 
     if request.GET:
-        """ handles sorting by name and descends or ascends depending on sort criteria """
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -27,13 +27,12 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
-
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-
+            
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -42,12 +41,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(
-                    request, "You didn't enter any search criteria")
+                messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            queries = Q(
-                name__icontains=query) | Q(description__icontains=query)
+            
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -73,19 +72,18 @@ def detailed_product(request, product_id):
 
 
 def add_product(request):
-    """ Lets superusers add products to the store """
+    """ lets superusers add products to the stor """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('detailed_product', args=[product.id]))
         else:
-            messages.error(request,
-                           'Failed to add product. Ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-
+        
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -95,17 +93,16 @@ def add_product(request):
 
 
 def edit_product(request, product_id):
-    """ allow superuser to edit a product """
+    """ Edit a product in the store """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('detailed_product', args=[product.id]))
         else:
-            messages.error(
-                request, 'Failed to update. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -117,3 +114,11 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('products'))
