@@ -1,0 +1,198 @@
+
+/* MediaQueries */
+/* Increase sized container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top on medium and larger */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/colorarity-header2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lora', serif;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+/* slim down text */
+.main-logo-link {
+    width: fit-content;
+}
+
+
+/* matching button design across page */
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+/* ads effect when hovering */
+.shop-button:hover, .shop-button:active, .shop-button:focus, .btn-black:hover, .btn-black:active, .btn-black:focus {
+    text-decoration: none;
+    background: #f8f9fa;
+    color: #212529;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item{
+    cursor: pointer;
+}
+
+
+
+/* similar to a bootstrap helper to maintain borders to be black */
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* similar to a bootstrap helper to maintain text to be black */
+.text-black {
+    color: #000 !important;
+}
+
+/* similar to a bootstrap helper to maintain background to be black */
+.bg-black{
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+/* header text shadow */
+h1.display-4.logo-font {
+    text-shadow: 2px 2px #000000;
+}
+
+.message-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+
+/* Convenience classes with colors from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+

@@ -1,45 +1,174 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+# This is not a finished project, I was greedy with the time I had and did not expect getting stuck on the problems I did. 
+### As I know that this project will not pass I will submit this to meet the deadline, and fork it towards a new repository and continue working on the project.<br>
+### Im gauging that the project will be complete midweek (on the 7th or the 8th). I appologize for the inconvinience. 
+<br>
+To test this I imagine you'd be running gitpod thus requiring secret keys. So there will be no preview of the page as the layouts are mostly there.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
+# Colorarity
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Colorarity is a companypage that acts as a wholesale for paint. With fast worldwide shipping and a high variety of colors in spray cans and buckets. This is a project that acts like the Milestone project 4, which is the 
+last project in the full stack course hosted by Code Institute. This project focuses on using full stack frameworks, and in this case I will be using Django.
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+### Index
+1. Project Planning.
+2. Updates Timeline.
+3. Planned Updates.
+4. Bugs & Errors.
+5. Additional Comments.
+6. External Resources.
+7. Testing.
+8. Deployment.
+9. Conclusion.
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## 1. Project Planning.
+I have created a wireframe of a model I would like to create. Its intuitive for the user and the focus is on the products we sell. What I want to do differently from the Boutique Ado project where there is eyecatching designs to promote user interactions, I would like to focus on the products colors(which they are) to try and make them look good and eye-catching.<br>
+There is no way bombarding the page with fancy colors and flashy designs when the product I'd sell is actual colors. And there is a need for the products to be seen clearly and not polluted by background colors and/or things that might disturb the view.<br>
+While at the same time I want the page to be interesting and not look like a Windows98 interface, I think this is a case of spartan designs and a easy-on-the-eyes color palette. 
 
-A blue button should appear to click: *Make Public*,
+>> User Goals:
+The user goals are quite self explanitary, a potential customer lands on the page looking for color, perhaps they are painting a fence, a baby chamber, or just like graffiti, who am I to judge. The user will be able to use a search function to find different colors. searching for "red", would bring up all colors with the word red in it (e.g "Sunset Red", "Coca Cola Red", "Tomato Red"). And the same for any other color. 
 
-Another blue button should appear to click: *Open Browser*.
+>> Owner Goals:
+The goal for me as the company/page owner, would be to offer a reliable customer service where I sell paint to paying customers, sorting payments and shipping. To create the easiest and most trustworthy experience for the customer.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+>> User stories:
+## 2. Updates Timeline.
+> **2021-04-04**
+>> Installed Django <br>
+>> Installed AllAuth  <br>
+>> Configured AllAuth BACKEND's <br>
+>> Set up Superuser<br>
+>> created requirements.txt<br>
+>> created templates using AllAuth templates<br>
+>> created base.html<br>
+>> configured nav in base.html<br>
+>> created static and media folders<br>
+>> created basic CSS for text, buttons, and media querys<br>
 
-## Updates Since The Instructional Video
+> **2021-04-05**<br>
+>> created /Includes for easy access and editing html code<br>
+>> created navigation in /Includes for mobile and larger screens<br>
+>> included navigation in base.html<br>
+>> set up CSS and background image<br>
+>> created a banner on homepage for shipping threshold<br>
+>> updated homepage text<br>
+>> Created fixtures for products and categories<br>
+>> tested database functionality<br>
+>> created products page<br>
+>> created detailed products page<br>
+>> created products layout on products.html template<br>
+>> created search function<br>
+>> created shopping bag function and view<br>
+>> created and configured <br>
+>> removed text tecoration on homepage button<br>
+>> formatted README<br>
+>> created increment/decrement buttons for quantity selection on products<br>
+>> configured incr/decr buttons for quantity on products using JS<br>
+>> up to version after GitPod Crash<br>
+>> created remove function to shopping bag<br>
+>> configured remove function to shopping bag<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+> **2021-04-06**
+>> configured toasts messages on success, update, and remove items from shopping bag.<br>
+>> created toasts<br>
+>> configured toasts <br>
+>> styled toasts using CSS-trix <br>
+>> configured checkout forms<br>
+>> configured checkouts signals.py<br>
+>> configured checkouts models.py<br>
+>> configured checkouts views.py<br>
+>> configured checkouts urls.py<br>
+>> installed crispy_forms<br>
+>> updated requirements.txt<br>
+>> configured builtins to templates<br>
+>> created checkout css<br>
+>> created checkout JS<br>
+>> created stripe_elements.JS for stripe visibility<br>
+>> added stripe keys to context<br>
+>> added bag_contents to bag contexts<br>
+>> configured stripe keys<br>
+>> configured submit handler<br>
+>> testing stripe Auth error<br>
+>> fixed stripe auth error in GitPod env virables<br>
+>> tested stripe functionality and confirmed its working in the dashboard<br>
+>> ***submitting project for deadline (read header part of README)***
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## 3. Planned Updates.
+|  Update | Finished |
+|---|---|
+| Templates  |  |
+|  Auth  |   |
+|  Products |  Yes |
+| Cart  |  Yes |
+| User feedback  | Yes(Toasts) | 
+| Checkout  |   |
+| User Profile  |   |
+| Admin  |   |
+|  Design and color |   |
+|  user stories |   |
+|  searching |  Yes  |
+|   |   |
+|   |   |
+## 4. Bugs & Errors.
+> ~~While working on creating the navigation, I could not get my current bootstrap/JS to actually display the dropdown menu on the page, the link worked but no dropdown would show.
+I went trough Slack and found similar issues that all reverted back to the source code for the Boutique Ado project.~~ I went and tried the same thing and changing the JS script CDNs 
+made it work. 
+<br>
+<br>
+> ~~The Products does render the correct template but the injected content is not displayed on screen.~~<br>
+a break in the logo caused layering issues.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## 5. Additional Comments.
+> having to end working early (21-04-04) due to scheduled power outage in my appartment complex. <br> <br>
 
---------
+> **if forloop.counter|divisibleby:X** <br>
+> While this DID take me a good while to figure out, its an amazing feature used in the Boutique Ado project.
+What this does is that there are X numbers of products displayed one each row(which changes on different screen sizes)
+the HR is displayed.<br>
 
-Happy coding!
+> **quant_input_script** <br>
+>>I tried figuring out this on my own but couldnt make it work reliably and again reverted back to the source code of the Boutique Ado project,
+I struggled with this for a while but finally made it work after researching both the videos and source code extensively.
+
+> **GitPod Error**
+>> GitPod decided to throw me out and currently im trying to patch things back up. 
+>> After throwing me out extentions like Prettier and visual enhancements are not working making it incredibly hard to read anything.
+
+> **remove_from_bag function**
+>> I struggled a lot with trying to recover after GitPod crashing on me and couldnt actually make
+>> this work, I headed over to the source code for the Boutique Ado project, but I will be honest and say that I 
+>> am not 100% sure how this view works, as I am not using sizes in my projects there wont be any conflicts in the actual
+>> funtion as it will always fire the bag.pop instead of finding a size attribute. 
+>> but it is not the way I would have wanted to work it out.
+
+> **Stripe AUTH error**
+>> ~~I was having problems with authorizing stripe using my secret keys, I tried using the GitPod Env Variables but couldnt get it to work.~~<br> I changed 
+>> the targeted Repos and made sure correct capitalization was used.
+
+## 6. External Resources.
+> Django allAuth<br>
+> Pillow<br>
+> crispy_forms
+> bootstrap<br>
+> Google Fonts<BR>
+> Font awesome<br>
+> CSS-trix (base.css line 145)<br>
+> Boutique Ado Mini-project Soruce Code<br>
+>>A lot of code used in this project is revamped code from the previous Boutique Ado project, because I feel like there is not really a better way to implement the same code, but in a different way.
+>> The Boutique Ado project suffers greatly from the lack of explanitary measures of WHY and HOW functions work the way they do, knowing what does this and that is great, but the learning outcomes are very slim
+>> and without extensively going trough Django documentation, there really isnt a whole lot to take away from it. <br>
+>> 
+
+
+## 7. Testing.
+## 8. Deployment.
+## 9. Conclusions.
