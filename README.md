@@ -1,3 +1,5 @@
+read line 188
+
 # Colorarity
 
 Colorarity is a companypage that acts as a wholesale for paint. With fast worldwide shipping and a high variety of colors in spray cans and buckets. This is a project that acts like the Milestone project 4, which is the 
@@ -181,7 +183,14 @@ I struggled with this for a while but finally made it work after researching bot
 >> and without extensively going trough Django documentation, there really isnt a whole lot to take away from it. <br>
 >> 
 
-
 ## 7. Testing.
 ## 8. Deployment.
 ## 9. Conclusions.
+
+Todays been hectic to say the least. Theres been tonnes of issues for me, and I have realized that I have not learnt enough from the course modules. I will submit this project as there isn't any more time.
+I feel really bad for not completing this project as i tried to study the course materials as much as possible, but doing this left me with less time to actually create the project.
+I already had an extended deadline but was not able to make it work but I would like to submit something rather than not submitting anything at all. I had an interview with a trainee program today which also stole a few hours of working time.
+I know the problematic areas here and would like to fix them eventually and recieving a passing grade on this project and the course.
+
+I was unable to set up the project on Heroku so there is nothing more than the repo to show, i would LOVE some pointers on this as I found it very hard to work with. 
+if I am allowed I would like to fork this project and continue to work on it after submitting, I will ask student counceling for this. 
