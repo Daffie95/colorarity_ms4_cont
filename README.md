@@ -104,14 +104,14 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 |  Update | Finished |
 |---|---|
 | Templates  |  |
-|  Auth  |   |
+|  Auth  | For Superuser  |
 |  Products |  Yes |
 | Cart  |  Yes |
 | User feedback  | Yes(Toasts) | 
-| Checkout  |   |
-| User Profile  |   |
-| Admin  |   |
-|  Design and color |   |
+| Checkout  | Yes  |
+| User Profile  |  Removed |
+| Admin  | Yes  |
+|  Design and color | Yes  |
 |  user stories |   |
 |  searching &Sorting |  Yes  |
 |   |   |
