@@ -130,6 +130,18 @@ made it work.
 > ~~The Products does render the correct template but the injected content is not displayed on screen.~~<br>
 a break in the logo caused layering issues.
 
+> **Checkout Success function stopped working**
+>> after trying to implement the cached data JQuery function the checkout success function stoped working. Trying to fix with Boutique Ado source code.
+>> function now works, but unsure what fixed it. Going over changes.
+
+> **Stripe AUTH error**
+>> ~~I was having problems with authorizing stripe using my secret keys, I tried using the GitPod Env Variables but couldnt get it to work.~~<br> I changed 
+>> the targeted Repos and made sure correct capitalization was used.
+
+> **GitPod Error**
+>> GitPod decided to throw me out and currently im trying to patch things back up. 
+>> After throwing me out extentions like Prettier and visual enhancements are not working making it incredibly hard to read anything.
+
 ## 5. Additional Comments.
 > having to end working early (21-04-04) due to scheduled power outage in my appartment complex. <br> <br>
 
@@ -142,10 +154,6 @@ the HR is displayed.<br>
 >>I tried figuring out this on my own but couldnt make it work reliably and again reverted back to the source code of the Boutique Ado project,
 I struggled with this for a while but finally made it work after researching both the videos and source code extensively.
 
-> **GitPod Error**
->> GitPod decided to throw me out and currently im trying to patch things back up. 
->> After throwing me out extentions like Prettier and visual enhancements are not working making it incredibly hard to read anything.
-
 > **remove_from_bag function**
 >> I struggled a lot with trying to recover after GitPod crashing on me and couldnt actually make
 >> this work, I headed over to the source code for the Boutique Ado project, but I will be honest and say that I 
@@ -153,12 +161,11 @@ I struggled with this for a while but finally made it work after researching bot
 >> funtion as it will always fire the bag.pop instead of finding a size attribute. 
 >> but it is not the way I would have wanted to work it out.
 
-> **Stripe AUTH error**
->> ~~I was having problems with authorizing stripe using my secret keys, I tried using the GitPod Env Variables but couldnt get it to work.~~<br> I changed 
->> the targeted Repos and made sure correct capitalization was used.
-
 > **Webhooks**
 >> Im going to be honest here, I dont think i've got a single clue on how webhooks works. Luckily they worked here with a lot of help from the Boutique Ado source code and googling.
+
+> **Removing profile function**
+>> I dont have time before deadline to implement the profile functions
 
 ## 6. External Resources.
 > Django allAuth<br>
