@@ -95,7 +95,8 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 >> comments on product app<br>
 >> comments on base.css<br>
 >> created webhook for stripe<br>
-
+>> tested webhook<br>
+>> 
 
 
 
@@ -155,6 +156,9 @@ I struggled with this for a while but finally made it work after researching bot
 > **Stripe AUTH error**
 >> ~~I was having problems with authorizing stripe using my secret keys, I tried using the GitPod Env Variables but couldnt get it to work.~~<br> I changed 
 >> the targeted Repos and made sure correct capitalization was used.
+
+> **Webhooks**
+>> Im going to be honest here, I dont think i've got a single clue on how webhooks works. Luckily they worked here with a lot of help from the Boutique Ado source code and googling.
 
 ## 6. External Resources.
 > Django allAuth<br>
