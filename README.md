@@ -132,7 +132,7 @@ a break in the logo caused layering issues.
 
 > **Checkout Success function stopped working**
 >> after trying to implement the cached data JQuery function the checkout success function stoped working. Trying to fix with Boutique Ado source code.
->> function now works, but unsure what fixed it. Going over changes.
+>> function now works, but unsure what fixed it. Going over changes. I took the source code and compared it, and adjusted anything that looked off. Now works
 
 > **Stripe AUTH error**
 >> ~~I was having problems with authorizing stripe using my secret keys, I tried using the GitPod Env Variables but couldnt get it to work.~~<br> I changed 
