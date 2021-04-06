@@ -117,10 +117,15 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 | Admin  |   |
 |  Design and color |   |
 |  user stories |   |
-|  searching |  Yes  |
+|  searching &Sorting |  Yes  |
 |   |   |
 |   |   |
 ## 4. Bugs & Errors.
+> My formatter extension has stopped working making everything I write a huge white wall of text.<br>
+I would like to give a heads up that there might be formatting errors, comments thats wierdly placed or similar things wrong here.
+Its incredibly hard to see what is what without text having different colors. Im both amused and annoyed to how hard coding must have been before
+extensions were a thing.
+
 > ~~While working on creating the navigation, I could not get my current bootstrap/JS to actually display the dropdown menu on the page, the link worked but no dropdown would show.
 I went trough Slack and found similar issues that all reverted back to the source code for the Boutique Ado project.~~ I went and tried the same thing and changing the JS script CDNs 
 made it work. 

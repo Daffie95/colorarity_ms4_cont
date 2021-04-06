@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-<!-- injects a page header -->
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -8,7 +8,7 @@
     </div>
 </div>
 {% endblock %}
-<!-- injects block content  -->
+
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
@@ -42,7 +42,7 @@
                 <p class="mt-3">{{ product.description }}</p>
                 <!-- form to allow users to add items to their bag -->
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-                    <!-- cross site request forgery token -->
+                    <!-- cross site request forgery token for Django to allow handling POST-->
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="col-12">
@@ -92,6 +92,7 @@
 </div>
 {% endblock %}
 
+<!-- imports quantity scripts -->
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
