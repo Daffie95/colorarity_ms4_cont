@@ -1,3 +1,5 @@
+# THIS IS NOT A FINISHED PROJECT
+
 read line 188
 
 # Colorarity
@@ -31,6 +33,10 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 
 >> User stories:
 ## 2. Updates Timeline.
+> **2021-05-04**
+>> installed heroku.
+>> updated heroku installpackage
+>> 
 > **2021-04-04**
 >> Installed Django <br>
 >> Installed AllAuth  <br>
