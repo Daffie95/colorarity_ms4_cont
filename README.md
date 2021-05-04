@@ -34,9 +34,10 @@ The goal for me as the company/page owner, would be to offer a reliable customer
 >> User stories:
 ## 2. Updates Timeline.
 > **2021-05-04**
->> installed heroku.
->> updated heroku installpackage
->> 
+>> installed heroku.<br>
+>> updated heroku installpackage.<br>
+>> Disabled COLLECT_STATIC config var on heroku.<br>
+>> fixed error with heroku now showing a page. <br>
 > **2021-04-04**
 >> Installed Django <br>
 >> Installed AllAuth  <br>
@@ -200,3 +201,8 @@ I know the problematic areas here and would like to fix them eventually and reci
 
 I was unable to set up the project on Heroku so there is nothing more than the repo to show, i would LOVE some pointers on this as I found it very hard to work with. 
 if I am allowed I would like to fork this project and continue to work on it after submitting, I will ask student counceling for this. 
+
+
+**2021-05-04**
+By demand of the student support I had to revisit this project to get a working deployed page and link working to be able to move forward.
+I have only supplied a heroku connection trough the CLI, nothing else has been added or removed as the project has already "been submitted". 
